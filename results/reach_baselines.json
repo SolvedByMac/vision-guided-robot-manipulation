@@ -1,0 +1,14 @@
+{
+  "random": {
+    "episodes": 100,
+    "success_rate": 0.17,
+    "mean_steps": 44.58,
+    "mean_final_distance": 0.2336206978932023
+  },
+  "oracle": {
+    "episodes": 100,
+    "success_rate": 1.0,
+    "mean_steps": 3.03,
+    "mean_final_distance": 0.03791990168392658
+  }
+}
