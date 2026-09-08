@@ -59,3 +59,15 @@ After retraining the same ResNet-18 architecture on images collected from privil
 - Mean episode pose error: 2.97 cm
 
 This recovered closed-loop performance without changing the network architecture, showing that the dominant failure mode was dataset distribution shift rather than insufficient model capacity.
+
+
+### Noise-robust policy ablation
+
+Five-seed evaluation with the control-state camera estimator:
+
+- Standard PPO + vision: 92.6% ± 4.0% success
+- Noise-trained PPO + vision: 94.0% ± 1.8% success
+- Standard PPO mean steps: 6.58 ± 1.96
+- Noise-trained PPO mean steps: 6.24 ± 0.63
+
+Calibrated Gaussian goal noise gave a small increase in mean success and reduced seed-to-seed variability, but the dominant improvement came from correcting the perception training distribution.

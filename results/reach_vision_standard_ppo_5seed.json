@@ -1,0 +1,48 @@
+{
+  "episodes_per_seed": 100,
+  "seeds": [
+    {
+      "seed": 0,
+      "success_rate": 0.95,
+      "mean_steps": 5.29,
+      "mean_final_distance_m": 0.037337052449584004,
+      "mean_pose_error_m": 0.056447872084377085
+    },
+    {
+      "seed": 1,
+      "success_rate": 0.97,
+      "mean_steps": 4.29,
+      "mean_final_distance_m": 0.03793784626759589,
+      "mean_pose_error_m": 0.0563853928978861
+    },
+    {
+      "seed": 2,
+      "success_rate": 0.95,
+      "mean_steps": 5.81,
+      "mean_final_distance_m": 0.03944867167621851,
+      "mean_pose_error_m": 0.06246080165632749
+    },
+    {
+      "seed": 3,
+      "success_rate": 0.86,
+      "mean_steps": 9.81,
+      "mean_final_distance_m": 0.049606420081108805,
+      "mean_pose_error_m": 0.09129397074547649
+    },
+    {
+      "seed": 4,
+      "success_rate": 0.9,
+      "mean_steps": 7.71,
+      "mean_final_distance_m": 0.03874648172874004,
+      "mean_pose_error_m": 0.05926534479113124
+    }
+  ],
+  "success_rate_mean": 0.9259999999999999,
+  "success_rate_std": 0.04029888335921975,
+  "mean_steps_mean": 6.582000000000001,
+  "mean_steps_std": 1.9601469332680141,
+  "final_distance_mean": 0.040615294440649444,
+  "final_distance_std": 0.004552129373833326,
+  "pose_error_mean": 0.06517067643503967,
+  "pose_error_std": 0.013250746328706674
+}
