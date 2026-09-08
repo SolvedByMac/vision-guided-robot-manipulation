@@ -1,0 +1,8 @@
+condition,success_mean,success_std,mean_steps,final_distance_cm
+Random baseline,0.17,0.0,44.58,23.36
+Privileged PPO,1.0,0.0,2.646,3.05
+Naive closed-loop vision,0.27,0.0,37.02,34.05
+Control-state vision + standard PPO,0.926,0.04,6.582,4.06
+Control-state vision + noisy PPO,0.94,0.018,6.244,4.05
+Camera shift + fixed estimator,0.208,0.057,41.178,13.26
+Camera shift + randomized estimator,0.856,0.027,10.704,5.44

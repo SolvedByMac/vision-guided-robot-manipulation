@@ -1,0 +1,6 @@
+{
+  "privileged_to_standard_vision_gap_pp": 7.4,
+  "naive_to_control_state_recovery_pp": 65.6,
+  "camera_shift_randomization_recovery_pp": 64.8,
+  "noise_training_gain_pp": 1.4
+}
