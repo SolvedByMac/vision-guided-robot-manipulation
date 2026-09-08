@@ -41,3 +41,21 @@ Pose error was measured while the privileged PPO controlled the robot:
 - Step 3: 45.09 cm mean error
 
 Because the controller still used privileged state, this isolates robot-motion-induced visual distribution shift from feedback errors caused by the vision policy itself.
+
+### Closed-loop recovery with control-state training data
+
+The reset-only estimator failed under robot motion:
+
+- Naive closed-loop success: 27%
+- Mean in-loop pose error: 41.58 cm
+
+After retraining the same ResNet-18 architecture on images collected from privileged PPO trajectories:
+
+- Control-state test mean error: 2.32 cm
+- Control-state test P95 error: 4.90 cm
+- Closed-loop success: 95%
+- Mean steps: 5.29
+- Mean final distance: 3.73 cm
+- Mean episode pose error: 2.97 cm
+
+This recovered closed-loop performance without changing the network architecture, showing that the dominant failure mode was dataset distribution shift rather than insufficient model capacity.
