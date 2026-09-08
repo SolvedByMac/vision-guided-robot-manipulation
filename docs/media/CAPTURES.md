@@ -71,3 +71,20 @@ Five-seed evaluation with the control-state camera estimator:
 - Noise-trained PPO mean steps: 6.24 ± 0.63
 
 Calibrated Gaussian goal noise gave a small increase in mean success and reduced seed-to-seed variability, but the dominant improvement came from correcting the perception training distribution.
+
+
+### Camera randomization generalization
+
+A small camera pose/FOV shift caused severe degradation with the fixed-camera estimator:
+
+- Fixed-camera estimator under shift: 20.8% ± 5.7% success
+- Mean pose error under shift: 17.0 ± 0.6 cm
+
+After training the same ResNet-18 architecture with camera pose and FOV randomization:
+
+- Shifted-camera success: 85.6% ± 2.7%
+- Mean steps: 10.70 ± 1.49
+- Mean final distance: 5.44 ± 0.41 cm
+- Mean pose error: 10.03 ± 0.40 cm
+
+Camera randomization recovered 64.8 percentage points of success under the shifted viewpoint.
