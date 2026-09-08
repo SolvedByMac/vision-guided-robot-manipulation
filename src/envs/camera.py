@@ -2,19 +2,25 @@ import numpy as np
 import pybullet as p
 
 
-def render_camera(width=128, height=128):
+def get_camera_matrices(width=256, height=256):
     view_matrix = p.computeViewMatrix(
-        cameraEyePosition=[1.2, 1.0, 0.9],
-        cameraTargetPosition=[0.0, 0.0, 0.4],
+        cameraEyePosition=[0.8, 0.8, 0.65],
+        cameraTargetPosition=[0.0, 0.0, 0.15],
         cameraUpVector=[0.0, 0.0, 1.0],
     )
 
     projection_matrix = p.computeProjectionMatrixFOV(
-        fov=60,
+        fov=45,
         aspect=width / height,
         nearVal=0.1,
-        farVal=3.0,
+        farVal=2.0,
     )
+
+    return view_matrix, projection_matrix
+
+
+def render_camera(width=256, height=256):
+    view_matrix, projection_matrix = get_camera_matrices(width, height)
 
     _, _, rgba, depth, segmentation = p.getCameraImage(
         width,
