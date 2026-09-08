@@ -1,6 +1,6 @@
-# Vision-Guided Robot Manipulation
+# Vision Guided Robot Manipulation
 
-A simulation-based robotics project studying how perception error affects closed loop control.
+A simulation based robotics project studying how perception error affects closed loop control.
 
 The system uses a PyBullet Franka Panda robot, a ResNet-18 camera based 3D goal estimator, and PPO policies trained for Cartesian reaching.
 
