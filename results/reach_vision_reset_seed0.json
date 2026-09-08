@@ -1,0 +1,10 @@
+{
+  "episodes": 100,
+  "success_rate": 0.91,
+  "mean_steps": 7.0,
+  "mean_final_distance_m": 0.03972291709855199,
+  "mean_pose_error_m": 0.023169699744321405,
+  "median_pose_error_m": 0.015498178079724312,
+  "p90_pose_error_m": 0.04273940809071064,
+  "p95_pose_error_m": 0.07644433602690691
+}
